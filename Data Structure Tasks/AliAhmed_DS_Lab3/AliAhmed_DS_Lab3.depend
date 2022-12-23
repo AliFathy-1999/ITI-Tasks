@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1669492542 source:/home/ali/ITI 9 months OS/7. Data Structure and algorithms/DS-Day3/AliAhmed_DS_Lab3/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Linkedlist.h"
+
+1669455892 /home/ali/ITI 9 months OS/7. Data Structure and algorithms/DS-Day3/AliAhmed_DS_Lab3/BubbleSort.h
+	"Linkedlist.h"
+
+1669492574 /home/ali/ITI 9 months OS/7. Data Structure and algorithms/DS-Day3/AliAhmed_DS_Lab3/Linkedlist.h
+

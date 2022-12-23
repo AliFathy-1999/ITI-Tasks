@@ -1,0 +1,78 @@
+
+
+1. 
+vi mycv
+==============================================
+2. 
+a. Move the cursor down one line at time.
+click esc 
+click j
+--------------------------------------------
+b. Move the cursor up one line at time
+click esc 
+click k
+--------------------------------------------
+c. Search for word age
+/name
+--------------------------------------------
+d. Step to line 5 (assuming that you are in line 1 and file is more than 5 lines)
+click esc 
+:5
+--------------------------------------------
+e. Delete the line you are on and line 5.
+dd
+click esc
+:4d
+--------------------------------------------
+f. How to step to the end of line and change to writing mode in one-step.
+Click on A
+==============================================
+3. List the available shells in your system.
+cat /etc/shells
+==============================================
+4. List the environment variables in your current shell.
+env
+==============================================
+5. List all of the environment variables for the bash shell.	
+man bash
+==============================================
+6. What are the commands that list the value of a specific variable?
+echo $name
+==============================================
+7. Display your current shell name.
+echo $SHELL
+==============================================
+8. State the initialization files of: sh, ksh, bash.
+cd /etc
+for ksh and sh it will be ~/.profile
+for bash it will be ~/.bash_profile
+
+==============================================
+9. Edit in your profile to display date at login and change your prompt permanently.
+cd /etc
+sudo nano ~/.bashrc
+write in this file
+date
+PS1="AliAhmed > "
+source ~/.bashrc ======> to refresh prompt
+==============================================
+10. Execute the following command :
+echo \ then press enter
+What is the purpose of \ ? 
+It is used to ignore alias and use default alias 
+----------------------------------------------------
+Notice the prompt ”>” what is that? and how can you change it from “>” to “:”.
+cd /etc
+vi bashrc
+write alias PS2=:
+:wq
+source ~/.bashrc ========> to refresh 
+==============================================
+11. Create a Bash shell alias named ls for the “ls –l” command
+cd /etc
+vi bashrc
+write alias ls="ls -l"
+:wq
+source ~/.bashrc ========> to refresh
+
+==============================================

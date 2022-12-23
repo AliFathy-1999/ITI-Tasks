@@ -1,0 +1,106 @@
+1. Create a user account with the following attribute
+ username: islam
+ Fullname/comment: Islam Askar
+ Password: islam
+sudo useradd -c "Islam Askar" -md /home/islam -s /bin/bash islam
+=======================================
+2. 
+sudo useradd -c "Bad User" -md /home/baduser -s /bin/bash baduser
+=======================================
+3.
+sudo groupadd -g 30000 pgroup
+=======================================
+4. 
+sudo groupadd -g 40000 badgroup
+=======================================
+5.
+sudo usermod -aG pgroup islam
+=======================================
+6. 
+sudo passwd islam
+=======================================
+7. 
+sudo chage -W 30 islam
+=======================================
+8. 
+sudo passwd -l baduser or sudo chmod -L baduser
+=======================================
+9. 
+sudo userdel -r baduser
+=======================================
+10.
+sudo groupdel badgroup
+=======================================
+13. 
+mkdir myteam
+chmod 400 myteam
+=======================================
+14.
+exit
+su islam
+=======================================
+15. 
+cd myteam
+bash: cd: myteam: Permission denied
+=======================================
+16.
+first way: chmod u=rw,g=wx,o=x oldpasswd
+second way: chmod 631 oldpasswd
+- Change your default permissions to be as above.
+umask 146 oldpasswd
+--------------------------------------
+- What is the maximum permission a file can have, by default when it is just created? And what is that for directory.
+777 ( rwxrwxrwx ) for directory and 666 ( rw-rw-rw- ) for files.
+--------------------------------------
+- Change your default permissions to be no permission to everyone then create a directory and a file to verify.
+umask 777
+touch fileafter000
+mkdir dirafter000
+=======================================
+17. What are the minimum permission needed for:
+- Copy a directory (permission for source directory and permissions for target parent directory)
+mkdir sourcedir
+mkdir targetdir
+chmod u=r sourcedir
+chmod u=wx targetdir
+ll
+--------------------------------------
+- Copy a file (permission for source file and and permission for target parent directory)
+touch sourcefile
+touch targetfile
+chmod  u=r sourcefile
+chmod  u=wx targetfile
+--------------------------------------
+- Delete a file
+rm sourcefile
+Message : rm: remove write-protected regular empty file 'sourcefile'? 
+--------------------------------------
+- Change to a directory
+cd targetdir
+changed directory because the permissions of directory targetdir execute and write 
+alifathy99@alifathy99-G5-5500:~/targetdir$ 
+--------------------------------------
+List a directory content (ls command)
+ls targetdir
+Message : ls: cannot open directory 'targetdir': Permission denied
+
+ls sourcedir ====================> list sourcedir because the permission of directory sourcedir read 
+
+--------------------------------------
+View a file content (more/cat command)
+cat sourcefile ====================> view sourcedir because the permission of file sourcedfile read 
+
+--------------------------------------
+Modify a file content
+cat >targetfile ====================> Modify targetfile because the permission of directory targetfile write 
+=======================================
+18. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.
+touch file444
+chmod 444 file444
+vi file444 , when edit in it this message  W10: Warning: Changing a readonly file
+rm file444 ,when delette it this message   rm: remove write-protected regular empty file 'file444'?
+=======================================
+19. What is the difference between the “x” permission for a file and for a directory?
+
+Execute permission on files means the right to execute them, if they are programs. (Files that are not programs should not be given the execute permission.) For directories, execute permission allows you to enter the directory (i.e., cd into it), and to access any of its files.
+

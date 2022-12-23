@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1668800435 source:d:\iti 9 months os\7. data structure and algorithms\ds-day2\aliahmed_ds_lab2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Stack.h"
+	"Queue.h"
+
+1668781859 d:\iti 9 months os\7. data structure and algorithms\ds-day2\aliahmed_ds_lab2\stack.h
+
+1668800404 d:\iti 9 months os\7. data structure and algorithms\ds-day2\aliahmed_ds_lab2\queue.h
+

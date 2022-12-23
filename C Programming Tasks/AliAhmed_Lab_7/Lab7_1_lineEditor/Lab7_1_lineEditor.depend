@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1668176906 source:d:\iti 9 months os\4. intoduction to programming\c labs\aliahmed_lab_7\lab7_1_lineeditor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+

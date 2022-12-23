@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1670074594 source:e:\iti os materials\7. data structure and algorithms\ds-day4\ds_lab_4\getmaxdepth\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../TREE.h"
+
+1670074161 e:\iti os materials\7. data structure and algorithms\ds-day4\ds_lab_4\tree.h
+

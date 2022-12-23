@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1667593196 source:d:\iti 9 months os\4. intoduction to programming\c labs\aliahmed_lab_4\lab4_4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

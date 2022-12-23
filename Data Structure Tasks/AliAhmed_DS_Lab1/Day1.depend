@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1668511567 source:d:\work\instructor\ds\intake 43\iot\day1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668528697 t.h"
+
+1668515484 d:\work\instructor\ds\intake 43\iot\day1\include\linkedlist.h
+
+1668518541 source:d:\iti 9 months os\7. data structure and algorithms\ds-day1\day1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668521821 d:\iti 9 months os\7. data structure and algorithms\ds-day1\day1\include\linkedlist.h
+
+1668528697 source:d:\iti 9 months os\7. data structure and algorithms\ds-day1\aliahmed_ds_lab1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668529215 d:\iti 9 months os\7. data structure and algorithms\ds-day1\aliahmed_ds_lab1\include\linkedlist.h
+
+1668528697 source:/home/ali/ITI 9 months OS/7. Data Structure and algorithms/DS-Day1/AliAhmed_DS_Lab1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668529215 /home/ali/ITI 9 months OS/7. Data Structure and algorithms/DS-Day1/AliAhmed_DS_Lab1/include/LinkedList.h
+
