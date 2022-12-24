@@ -1,0 +1,212 @@
+1. Create a script that asks for user name then send a greeting to him.
+vi greeting.sh
+In greeting.sh:
+	#!/bin/bash
+	echo Hello $1
+:wq
+sudo chmod +x greeting.sh
+./greeting.sh Ali
+ 	Hello Ali
+=======================================================================
+2. Create a script called s1 that calls another script s2 where:
+	a. In s1 there is a variable called x, it's value 5
+	touch s1.sh
+	touch s2.sh
+	sudo chmod +x s1.sh
+	sudo chmod +x s2.sh
+	write in s1.sh
+		#!/bin/bash
+		typeset -i x
+		export x=5
+	---------------------------------------------------------------
+	b. Try to print the value of x in s2 by two different ways.
+	First way :
+		vi s2.sh
+		write in s2.sh
+			#!/bin/bash
+			echo $x
+			:wq
+		source s1.sh
+		./s2.sh ==========> 5
+	Second way :
+	vi s1.sh
+	write in s1.sh
+		y=3
+		./s2.sh $y
+	:wq
+	vi s2.sh
+	write in s2.sh	
+		echo $1
+	:wq
+	source ./s1.sh
+	./s2.sh 10
+		========> 5
+		========> 10
+=======================================================================	
+3. Create a script called mycp where:
+	a. It copies a file to another
+	touch source
+	touch dest
+	touch mycp.sh
+	sudo chmod +x mycp.sh
+	vi mycp.sh
+	write in mycp.sh
+		#!/bin/bash
+		cp $1 $2
+		echo copied successfully	
+	:wq
+	./mycp.sh ./source ./dest
+	---------------------------------------------------------------
+	b. It copies multiple files to a directory.
+	mkdir mycpdir
+	vi mycp.sh
+	#!/bin/bash
+		if [ $# -eq 2 ]
+		then 
+			cp $1 $2
+		else
+			cp $*
+		fi
+	:wq
+	./mycp.sh ./source ./dest ./filename1 ./mycpdir 
+=======================================================================
+4. Create a script called mycd where:
+	a. It changed directory to the user home directory, if it is called without arguments.
+	b. Otherwise, it change directory to the given directory.
+	touch mycd.sh
+	sudo chmod +x mycd.sh
+	vi mycd.sh
+	#!/bin/bash
+		if [ $# -eq 0 ]
+		then 
+			cd ~
+		else
+			cp $1
+		fi
+	:wq
+	source ./mycd.sh ./mycpdir 
+=======================================================================
+5. Create a script called myls where:
+	a. It lists the current directory, if it is called without arguments.
+	b. Otherwise, it lists the given directory.
+	touch myls.sh
+	sudo chmod +x myls.sh
+	vi myls.sh
+	#!/bin/bash
+		if [ $# -eq 0 ]
+		then 
+			ls
+		else
+			ls $1
+		fi
+	:wq
+	./myls.sh ./mycpdir 
+=======================================================================
+6. Enhance the above script to support the following options individually:
+	a. –l: list in long format
+	---------------------------------------------------------------
+	b. –a: list all entries including the hiding files.
+	---------------------------------------------------------------
+	c. –d: if an argument is a directory, list only its name
+	---------------------------------------------------------------
+	d. –i: print inode number
+	---------------------------------------------------------------
+	e. –R: recursively list subdirectories
+	
+	touch enhancemyls.sh
+	sudo chmod +x enhancemyls.sh
+	vi enhancemyls.sh
+	#!/bin/bash
+	if [ $# -eq 0 ]
+	then 
+		ls 
+	fi
+	if [ $1 = "-l"  ]
+	then
+		echo list in long format
+	fi 
+	if [ $1 = "-a"  ]
+	then
+		echo list all entries including the hiding files.
+	fi 
+	if [ $1 = "-d"  ]
+	then
+		echo if an argument is a directory, list only its name
+	fi 
+	if [ $1 = "-i"  ]
+	then
+		echo print inode number
+	fi 
+	if [ $1 = "-R"  ]
+	then
+		echo recursively list subdirectories
+	fi 
+	:wq
+	./enhancemyls.sh -l ==========> list in long format
+	./enhancemyls.sh -d ==========> if an argument is a directory, list only its name
+	./enhancemyls.sh -a ==========> list all entries including the hiding files.
+	./enhancemyls.sh -i ==========> inode number	 
+	./enhancemyls.sh -R ==========> recursively list subdirectories	
+=======================================================================
+7. Create a script called mytest where:
+	a. It check the type of the given argument (file/directory)
+	---------------------------------------------------------------
+	b. It check the permissions of the given argument (read/write/execute)
+	touch mytest.sh
+	sudo chmod +x mytest.sh
+	vi mytest.sh
+	#!/bin/bash
+	if [ $# -eq 0 ]
+	then 
+		echo neither file nor directory 
+	elif [ -f $1   ]
+	then
+		echo File 
+	elif [ -d $1   ]
+	then
+		echo Directory 
+	fi
+
+	if [ -r $1   ]
+	then
+	echo Readable 
+	fi
+	if [ -w $1   ]
+	then
+		echo writable 
+	fi
+	if [ -x $1   ]
+	then
+		echo executable	
+	fi 
+	:wq
+	./mytest.sh ./File
+	
+=======================================================================
+8. Create a script called myinfo where:
+	a. It asks the user about his/her logname.
+	---------------------------------------------------------------
+	b. It print full info about files and directories in his/her home directory
+	---------------------------------------------------------------
+	c. Copy his/her files and directories as much as you can in /tmp directory.
+	---------------------------------------------------------------
+	d. Gets his current processes status.
+	touch myinfo.sh
+	sudo chmod +x myinfo.sh
+	vi myinfo.sh
+	#!/bin/bash
+	echo what is your login name ?
+	read answer
+	home=`grep $answer /etc/passwd | cut -d: -f6`
+	if grep ^$answer /etc/passwd
+	then
+		ls -l $home
+	cp -r $HOME/*  /tmp
+	ps -u $answer	
+	else 
+		echo Invalid name
+	fi
+	:wq
+	./myinfo
+	alifathy99
+	

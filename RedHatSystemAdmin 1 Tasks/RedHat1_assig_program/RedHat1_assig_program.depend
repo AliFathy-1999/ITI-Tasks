@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1670448975 source:/home/alifathy99/ITI OS/8. Red Hat System Adminstration I/RedHat1_assig_program/main.c
+	<stdio.h>
+	<time.h>
+
