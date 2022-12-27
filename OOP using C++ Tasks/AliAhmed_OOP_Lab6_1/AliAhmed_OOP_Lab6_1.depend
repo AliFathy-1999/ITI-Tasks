@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1672136769 source:e:\iti os materials\14. oop using c++\oop-day6\aliahmed_oop_lab6_1\main.cpp
+	<iostream>
+	"Derived.h"
+
+1671969513 source:e:\iti os materials\14. oop using c++\oop-day6\aliahmed_oop_lab6_1\src\base.cpp
+	"Base.h"
+
+1671972210 e:\iti os materials\14. oop using c++\oop-day6\aliahmed_oop_lab6_1\include\base.h
+
+1671969331 source:e:\iti os materials\14. oop using c++\oop-day6\aliahmed_oop_lab6_1\src\derived.cpp
+	"Derived.h"
+
+1671968945 e:\iti os materials\14. oop using c++\oop-day6\aliahmed_oop_lab6_1\include\derived.h
+	"Base.h"
+
+1671970789 source:e:\iti os materials\14. oop using c++\oop-day6\aliahmed_oop_lab6_1\src\secondderived.cpp
+	"SecondDerived.h"
+	"Derived.h"
+
+1671970674 e:\iti os materials\14. oop using c++\oop-day6\aliahmed_oop_lab6_1\include\secondderived.h
+	"Derived.h"
+

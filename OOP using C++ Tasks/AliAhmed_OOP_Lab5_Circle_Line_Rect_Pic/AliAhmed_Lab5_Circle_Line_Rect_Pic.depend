@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1671837618 source:e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\main.cpp
+	<iostream>
+	"Line.h"
+	"Circle.h"
+	"Rectangle.h"
+	"Picture.h"
+
+1671834766 source:e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\src\point.cpp
+	"Point.h"
+	<iostream>
+
+1671834556 e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\include\point.h
+
+1671835909 source:e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\src\line.cpp
+	"Line.h"
+	<iostream>
+
+1671835892 e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\include\line.h
+	"Point.h"
+
+1671836579 source:e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\src\rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+
+1671836208 e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\include\rectangle.h
+	"Point.h"
+
+1671836597 source:e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\src\circle.cpp
+	"Circle.h"
+	<iostream>
+
+1671836510 e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\include\circle.h
+	"Point.h"
+
+1671836855 source:e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\src\picture.cpp
+	"Picture.h"
+	<iostream>
+
+1671836718 e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\include\picture.h
+	"Point.h"
+	"Line.h"
+	"Rectangle.h"
+	"Circle.h"
+
+1671835005 e:\iti os materials\14. oop using c++\oop-day5\aliahmed_lab5_circle_line_rect_pic\line.h
+	"Point.h"
+

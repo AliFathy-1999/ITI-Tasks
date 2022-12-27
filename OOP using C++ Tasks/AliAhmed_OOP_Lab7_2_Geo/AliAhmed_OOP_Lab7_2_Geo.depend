@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1672138505 source:e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\main.cpp
+	<iostream>
+	"Rectangle.h"
+	"Circle.h"
+	"Square.h"
+	"GeoShape.h"
+	"Triangle.h"
+
+1672052204 source:e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\src\geoshape.cpp
+	"GeoShape.h"
+
+1672051901 e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\include\geoshape.h
+
+1672055422 source:e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\src\circle.cpp
+	"Circle.h"
+
+1672053467 e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\include\circle.h
+	"GeoShape.h"
+
+1672052934 source:e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\src\rectangle.cpp
+	"Rectangle.h"
+
+1672052863 e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\include\rectangle.h
+	"GeoShape.h"
+
+1672053977 source:e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\src\square.cpp
+	"Square.h"
+
+1672053976 e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\include\square.h
+	"Rectangle.h"
+
+1672052751 source:e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\src\triangle.cpp
+	"Triangle.h"
+
+1672052716 e:\iti os materials\14. oop using c++\oop-day7\aliahmed_oop_lab7_2_geo\include\triangle.h
+	"GeoShape.h"
+
