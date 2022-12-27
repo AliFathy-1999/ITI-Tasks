@@ -1,0 +1,236 @@
+1. Write a script called mycase, using the case utility to checks the type of character entered by a user:
+	a. Upper Case.
+	b. Lower Case.
+	c. Number.
+	d. Nothing.
+	touch mycase.sh
+	chmod +x  ./mycase.sh
+	vi mycase.sh
+	#!/bin/bash
+	echo Enter Char please ?
+	read char
+	case $char in
+	[a-z] ) echo lower case
+	;;
+	[A-Z] ) echo Upper Case
+	;;
+	[0-9] ) echo Number
+	;;
+	*) echo Nothing
+	esac	
+	./mycase.sh
+	===========================================================================
+2. Enhanced the previous script, by checking the type of string entered by a user:
+	a. Upper Cases.
+	b. Lower Cases.
+	c. Numbers.
+	d. Mix.
+	e. Nothing.
+	touch Enhancemycase.sh
+	chmod +x  ./Enhancemycase.sh
+	vi Enhancemycase.sh
+		#!/bin/bash
+		shopt -s extglob
+		export LC_COLLATE=C
+		echo Enter String please ?
+		read string
+		case $string in
+		+([a-z])) echo "lower case"
+		;;
+		+([A-Z])) echo "Upper Case"
+		;;
+		+([0-9])) echo "Number"
+		;;
+		+([a-zA-Z])) echo "Mix"
+		;;
+		*) echo "Nothing"
+		esac
+		./Enhancemycase.sh
+	===========================================================================	
+3. Write a script called mychmod using for utility to give execute permission to all files and directories in your home directory.
+	touch mychmod.sh
+	chmod +x  ./mychmod.sh
+	vi mychmod.sh
+	#!/bin/bash
+	for ch in `ls /home/$USER`
+	do
+		chmod +x /home/$USER/$ch
+	done
+	:wq
+	source ./mychmod.sh
+	===========================================================================
+4. Write a script called mybackup using for utility to create a backup of only files in your home directory. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	===========================================================================
+5. Write a script called mymail using for utility to send a mail to all users in the system. Note: write the mail body in a file called mtemplate.
+	touch mymail.sh
+	touch mtemplate
+	chmod +x  ./mymail.sh
+	vi mymail.sh
+	#!/bin/bash
+	for name in `cut -f1 -d: /etc/passwd`
+	do
+		mailx -s "Mail Subject" $name  < ../mtemplate 
+		echo "Mail sent successfully !"
+	done
+	:wq
+	source ./mymail.sh
+	sudo su - root
+	mailx -i ============> To display mails 
+	===========================================================================
+6. Write a script called chkmail to check for new mails every 10 seconds. Note: mails are saved in /var/mail/username
+	touch chkmail.sh
+	chmod +x chkmail.sh
+	vi chkmail.sh
+	#! /bin/bash
+	typeset -i oldmail
+	typeset -i newmail
+	echo please wait, refresh every 10 seconds.....
+	while [ true ]
+	do
+		oldmail=`wc -l /var/mail/$USER | cut -d" " -f1`
+		sleep 10
+		newmail=`wc -l /var/mail/$USER | cut -d" " -f1`
+		
+		if [ $oldmail -lt $newmail   ]
+		then
+			echo there are new emails
+		elif [ $oldmail -eq $newmail ]
+		then 
+			echo there are no new emails
+		fi 
+
+	done
+	:wq
+	./chkmail
+	===========================================================================
+7. What is the output of the following script
+	typeset –i n1
+	typeset –i n2
+	n1=1
+	n2=1
+	while test $n1 –eq $n2
+	do
+	n2=$n2+1
+	print $n1
+	if [ $n1 –gt $n2 ]
+	then
+	break
+	else
+	continue
+	fi
+	n1=$n1+1
+	print $n2
+	done
+	
+		./question7.sh 
+	=============>
+		./question7.sh: line 3: typeset: `–i': not a valid identifier
+		./question7.sh: line 4: typeset: `–i': not a valid identifier
+		./question7.sh: line 7: test: –eq: binary operator expected
+
+	<==================
+	===========================================================================
+8. Create the following menu:
+	a. Press 1 to ls
+	b. Press 2 to ls –a
+	c. Press 3 to exit
+	Using select utility then while utility.
+	
+	touch menu.sh
+	chmod +x menu.sh
+	vi menu.sh
+	#!/bin/bash
+	select choice in "ls" "ls -a" "exit"  
+	do
+	case $REPLY in
+	1) ls
+	;;
+	2) ls -a
+	;;
+	3) exit
+	;;
+	*) echo $REPLY is not one of the choices.
+	;;
+	esac
+	done
+	:wq
+	./menu.sh
+	enter 1 =======> ls
+	enter 2 =======> ls -a
+	enter 3 =======> exit
+	enter 6 =======> 6 is not one of the choices.
+	===========================================================================
+9. Write a script called myarr that ask a user how many elements he wants to enter in an array, fill the array and then print it.
+		touch myarray.sh
+		chmod +x myarray.sh
+		vi myarray.sh
+		#!/bin/bash
+		shopt -s extglob
+		export LC_COLLATE=C
+
+		echo Enter size of array
+		read size
+
+		$typeset –i arr[$size]
+		$typeset –i  i
+		i=0
+		for ((i=0;i<$size;i++))
+		do
+			printf "Enter element $i: "
+			read element
+			array[$i]=$element
+		done
+		echo ${array[*]}
+		:wq
+		./myarray
+	===========================================================================
+10.Write a script called myavg that calculate average of all numbers entered by a user. Note: use arrays
+	touch avg.sh
+	chmod +x avg.sh
+	vi avg.sh
+	#!/bin/bash
+	shopt -s extglob
+	export LC_COLLATE=C
+
+	echo Enter size of array
+	read size
+
+	$typeset –i array[$size]
+	avg=0
+	i=0
+	for ((i=0;i<$size;i++))
+	do
+		printf "Enter element $i: "
+		read element
+		array[$i]=$element
+	done
+		for ((i=0;i<$size;i++))
+		do
+			((avg=$avg+${array[i]}))
+		done
+		echo "avg is $(($avg / $size))"
+	:wq
+	./avg.sh
+	Enter size of array
+	3
+	./avg.sh: line 8: –i: command not found
+	Enter element 0: 1
+	Enter element 1: 2
+	Enter element 2: 3
+	avg is 2
+
+	===========================================================================
+11.Write a function called mysq that calculate square if its argument.
+	touch mysq.sh
+	chmod +x mysq.sh
+	vi mysq.sh
+	#!/bin/bash
+	echo enter number please
+	read number
+	function sqnum(){
+		echo $(($number * $number))
+	}
+	sqnum 
+	:wq
+	./mysq.sh
+	===========================================================================
