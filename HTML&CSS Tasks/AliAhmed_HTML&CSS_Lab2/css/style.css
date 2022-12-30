@@ -1,0 +1,44 @@
+body{
+    background-image: url(/images/image.jpeg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+.my-form{
+    margin: 200px 600px;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+label{
+    color: white;
+    font-size: 30px;
+}
+input{
+    width: 90%;
+    height: 30px;
+    margin-left: 20px;
+}
+legend{
+    margin-left: 210px;
+    
+}
+#my-img{
+    border-radius: 50%;
+    height: 160px;
+}
+.loginBtn{
+    border-radius: 100px;
+    font-size: larger;
+    background-color: red;
+    margin-left: 160px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 40%;
+    border: 0;
+}
