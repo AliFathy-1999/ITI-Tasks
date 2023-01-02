@@ -40,12 +40,15 @@ body{
 }
 .btnlist:hover{
     cursor: pointer;
-    
+    color:bisque;
 }
-
+.a_class:hover{
+    cursor: pointer;
+    color:bisque;
+}
 #main-div{
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 #main-div h1{
     color: white;
@@ -60,7 +63,7 @@ body{
     display: inline;
 }
 .blocks>img{
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     padding: 6%;
 }
