@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess game trial version</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/rawles" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav-style">
+        <i class="fa-solid fa-chess chess-icon"></i>
+        <h1 id="website-name">Chess Game Vision Trainer</h1>
+    </nav>
+    <div id="main-div">
+        <div id="chess-div">
+
+            <table cellspacing="0" border="1" id="chess-table">
+                <tr>
+                    <td id="a8">8</td>
+                    <td id="b8"></td>
+                    <td id="c8"></td>
+                    <td id="d8"></td>
+                    <td id="e8"></td>
+                    <td id="f8"></td>
+                    <td id="g8"></td>
+                    <td id="h8"></td>
+                </tr>
+                <tr>
+                    <td id="a7">7</td>
+                    <td id="b7"></td>
+                    <td id="c7"></td>
+                    <td id="d7"></td>
+                    <td id="e7"></td>
+                    <td id="f7"></td>
+                    <td id="g7"></td>
+                    <td id="h7"></td>
+                </tr>
+                <tr>
+                    <td id="a6">6</td>
+                    <td id="b6"></td>
+                    <td id="c6"></td>
+                    <td id="d6"></td>
+                    <td id="e6"></td>
+                    <td id="f6"></td>
+                    <td id="g6"></td>
+                    <td id="h6"></td>
+                </tr>
+                <tr>
+                    <td id="a5">5</td>
+                    <td id="b5"></td>
+                    <td id="c5"></td>
+                    <td id="d5"></td>
+                    <td id="e5"></td>
+                    <td id="f5"></td>
+                    <td id="g5"></td>
+                    <td id="h5"></td>
+                </tr>
+                <tr>
+                    <td id="a4">4</td>
+                    <td id="b4"></td>
+                    <td id="c4"></td>
+                    <td id="d4"></td>
+                    <td id="e4"></td>
+                    <td id="f4"></td>
+                    <td id="g4"></td>
+                    <td id="h4"></td>
+                </tr>
+                <tr>
+                    <td id="a3">3</td>
+                    <td id="b3"></td>
+                    <td id="c3"></td>
+                    <td id="d3"></td>
+                    <td id="e3"></td>
+                    <td id="f3"></td>
+                    <td id="g3"></td>
+                    <td id="h3"></td>
+                </tr>
+                <tr>
+                    <td id="a2">2</td>
+                    <td id="b2"></td>
+                    <td id="c2"></td>
+                    <td id="d2"></td>
+                    <td id="e2"></td>
+                    <td id="f2"></td>
+                    <td id="g2"></td>
+                    <td id="h2"></td>
+                </tr>
+                <tr>
+                    <td id="a1">1-a</td>
+                    <td id="b1">b</td>
+                    <td id="c1">c</td>
+                    <td id="d1">d</td>
+                    <td id="e1">e</td>
+                    <td id="f1">f</td>
+                    <td id="g1">g</td>
+                    <td id="h1">h</td>
+                </tr>
+            </table>
+        </div>
+        <div id="score-sider-div">
+            <h1 id="vision-title">Vision</h1>
+                <h2 id="randomCode"></h2>
+            <div id="chess-scores"> 
+                <section class="score-style">
+                    <i class="fa-solid fa-chess chess-icon"></i>
+                    <span class="count" id="score-count">0</span>
+                </section>
+                <section class="timer-style">
+                    <i class="fa-regular fa-clock chock-icon"></i>
+                    <span class="clock-count" id="clock-counter">0s</span>
+                </section>
+            </div>
+            <div>
+                <section id="answers-style">
+                </section>
+            </div>
+            <section style="display: flex;justify-content: center;">
+                <button id="StartBtn" ><i class="fa-solid fa-play"></i> Start</button>
+            </section>
+        </div>
+    </div>
+    
+    <footer id="footer-style">
+        <ul id="footer-ul">
+            <li><p id="copyright" class="footer-li">&copy; 2023 Chess Game, Inc</p></li>
+            <li> <p id="developer-name" class="footer-li">This website made by Web Developer <a href="https://github.com/AliFathy-1999" target="_blank"><i style="font-size: xx-large;" class="fa-brands fa-github"></i>  Ali Ahmed Fathi</a></p></li>
+        </ul>
+    </footer>
+    <script src="./lab5.js"></script>
+</body>
+</html>
