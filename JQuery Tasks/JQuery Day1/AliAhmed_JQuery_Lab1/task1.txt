@@ -1,0 +1,5 @@
+Create a div tag and it should display Welcome message (by using JQuery )
+Create two div tags and assign yellow as background colour to both of them by using JQuery.
+Display and hide message shown in the div tag on click of the buttons.  => You can use Jquery show hide.
+Display and hide message by using a single button . You can use Jquery toggle().
+Create a div tag and on click of a button it should display your name.
