@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1 Immediate FormValidate</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form oninput="mySalary.value=`${salary.value}$`">
+        <h2 style="text-align: center;">Form</h2>
+        <label for="name">Name </label>
+        <input type="text" name="" id="name" required><br><br>
+        <label for="email">Email </label>
+        <input type="email" name="" id="email" required><br><br>
+        <label for="password">Password  </label>
+        <input type="password" name="" id="password" minlength="8"><br><br>
+        <label for="salary">Salary </label>
+        <input type="range" name="salary" id="salary" max="1000">  
+        <output name="mySalary"></output>
+        <br><br>
+        <label for="age">Age </label>
+        <input type="number" name="" id="age" min="21"><br><br>
+        <div id="submitDiv">
+            <input type="submit" value="Submit" id="submitBtn">
+        </div>
+    </form>
+</body>
+</html>

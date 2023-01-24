@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 Immediate Generate Shapes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main-div">
+        <div id="shapes-div">
+            <div id="buttons-style">
+                <button id="drawLine" class="imageBtn">
+                    <img src="./images/line.png" alt="line" width="120" height="100">
+                </button>
+                <button id="drawRect" class="imageBtn">
+                    <img src="./images/rectangle.png" alt="rectangle" width="120" height="100">
+                </button>
+                <button id="drawCircle" class="imageBtn">
+                    <img src="./images/circle.png" alt="circle" width="120" height="100">
+                </button>
+            </div>
+        </div>
+        <h1 style="color:red;text-align: center;">Try alot to draw shapes</h1>
+        <div id="drawShapesDiv" width="500" height="300">
+            <h2>Draw Rectangle here</h2>
+            <svg width="1000" height="500" id="mysvg">
+
+            </svg>
+            <hr>
+            <h2>Draw Line here</h2>
+            <svg width="400" height="400" id="mysvgLine">
+
+            </svg>
+
+            <hr>
+            <h2>Draw Circle here</h2>
+            <svg width="1000" height="1000" id="mysvgCircle">
+
+            </svg>
+
+        </div>
+    </div>
+    <script src="./js/script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Board: Line & Free Hand</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/paintIcon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+</head>
+<body>
+<h1 class="drawtitle"><i class="fa-solid fa-palette"></i> Art Board: Line & Free Hand</h1>
+<div class="grid-container">
+    <div class="part1">
+        <div id="object-style">
+            <button id="drawByHand" class="imageBtn">
+                <img src="./images/draw.png" id="drawByHand"alt="draw" width="120" height="100">
+            </button>
+            <button id="drawLine" class="imageBtn">
+                <img src="./images/line.png" alt="line" width="120" height="100">
+            </button>
+            <button id="drawRect" class="imageBtn">
+                <img src="./images/rectangle.png" alt="rectangle" width="120" height="100">
+            </button>
+            <button id="drawCircle" class="imageBtn">
+                <img src="./images/circle.png" alt="circle" width="120" height="100">
+            </button>
+            <button id="Eraser" class="imageBtn">
+                <img src="./images/eraser.png" alt="easer" width="120" height="100">
+            </button>
+        </div>
+    </div>
+    <div class="part2">
+        <div id="color-style">
+            <h1 class="titleStyle"><i class="fa-solid fa-fill"></i> Fill style</h1>
+            <input type="color" name="fill-style" id="fill-style" class="Colorstyle">
+            <h1 class="titleStyle"><i class="fa-sharp fa-solid fa-border-all"></i> Stroke style</h1>
+            <input type="color" name="stoke-style" id="stoke-style" class="Colorstyle">
+            <h1 class="titleStyle"><i class="fa-solid fa-pen"></i> Line Thickness</h1>
+            <input type="range" name="thickness" id="thickness" min="1" max="20"><span id="rangevalue"></span>
+        </div>
+    </div>
+    <div class="part3"> 
+        <div id="draw-page-style">
+            <h1 class="drawtitle"><i class="fa-solid fa-brush"></i> Draw here</h1>
+            <canvas id="myCanvas" width="1000" height="600"style="border:3px solid #000000;"></canvas>
+        </div>
+    </div>  
+  </div>
+      
+    <script src="./js/script3.js"></script>
+</body>
+</html>

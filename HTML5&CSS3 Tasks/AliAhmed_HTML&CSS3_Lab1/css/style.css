@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+#main-dev{
+    text-align: center;
+    margin: 10%;
+    font-size: 36px;
+}
+header{
+    padding: 1em;
+    padding: auto;
+    background-color: green;
+}
+nav{
+    padding: 1em;
+    background-color: cyan;
+}
+article{
+    padding: 1em;
+    background-color: orange;
+}
+#myimage{
+    width: 70%;
+}
+section{
+    padding: 1em;
+    background-color: yellow;
+}
+footer{
+    padding: 1em;
+    background-color: red;
+}
+/*Second Task CSS*/
+form{
+    margin: 10% 0px 0px 25%;
+    padding: 3vw;
+    font-size: 2em;
+    border: 2px solid orange;
+    width: 55%;
+}
+label{
+    margin-right: 15px;
+}
+input:not([type=submit])
+{
+    width: 80%;
+    height: 40px;
+    font-size: 0.8em;
+}
+#submitDiv{
+    display: flex;
+    justify-content: end;
+}
+#submitBtn{
+    background-color:green;
+    color: white;
+    padding: 0.8em;
+    border-radius: 5px;
+    font-size: 0.8em;
+    border: 0;
+}
+/*Third Task CSS*/
+
+#music-div{
+    padding: 5%;
+    width: 100%;
+}
+#myaudio{
+    width: 60%;
+}
+#buttons-div{
+    text-align: center;
+    background-color: orange;
+    width: 60%;
+    padding: 2%;
+}
+#buttons-div button{
+    margin-left: 5%;
+    padding: 2%;
+    border: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#audio-div{
+    background-color: #f1f3f4;
+    width: 60%;
+    text-align: center;
+    padding: 1%;
+}
+#songs-div{
+    background-color: #f1f3f4;
+    width: 60%;
+    padding: 2%;
+}
+#songs-div button{
+    display: block;
+    width: 90%;
+    height: 100px;
+    text-align: left;
+    margin:2% 0px 0px 3%;
+    font-size: 2em;
+    padding: 2%;
+    color:#0275d8;
+}
