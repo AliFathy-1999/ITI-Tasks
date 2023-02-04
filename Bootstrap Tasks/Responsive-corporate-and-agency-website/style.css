@@ -1,0 +1,17 @@
+body{
+    overflow-x: hidden;
+}
+#website-name+span{
+    font-size: xx-large;
+    color: red;
+}
+#hero-div{
+    background-image: url("./img/hero-bg.jpg");
+    background-size: cover;
+}
+#about,footer{
+     background-color:#CFE2FF; 
+}
+.author{
+    cursor: pointer;
+}
