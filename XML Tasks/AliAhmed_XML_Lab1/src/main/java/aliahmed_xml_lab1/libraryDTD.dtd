@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!ELEMENT library (info+, books*)>
+<!ELEMENT info (location*, description?,librarian+)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT librarian (#PCDATA)>
+
+<!ELEMENT books (Btitle?, ISBN?,Author+,preface?,parts+)>
+<!ELEMENT Btitle (#PCDATA)>
+<!ATTLIST Btitle bid ID #REQUIRED>
+<!ELEMENT ISBN (#PCDATA)>
+<!ATTLIST ISBN id ID #REQUIRED>
+<!ELEMENT Author (#PCDATA)>
+<!ATTLIST Author gender ( Male | Female ) "Male">
+<!ELEMENT preface (#PCDATA)>
+
+<!ELEMENT parts (ptitle?, chapter+)>
+<!ELEMENT ptitle (#PCDATA)>
+<!ATTLIST parts pid ID #REQUIRED>
+
+<!ELEMENT chapter (CHtitle?, summary?,sections+)>
+<!ATTLIST chapter chid ID #REQUIRED>
+<!ELEMENT CHtitle (#PCDATA)>
+<!ATTLIST CHtitle length CDATA "2">
+<!ELEMENT summary (#PCDATA)>
+<!ATTLIST summary totalwords CDATA "10">
+<!ELEMENT sections (content?)>
+<!ELEMENT content (#PCDATA)>

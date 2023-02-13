@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AliAhmed_JAVA_GUI_Lab1.jnlp">
+    <information>
+        <title>AliAhmed_JAVA_GUI_Lab1</title>
+        <vendor>alifathy99</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9.0.4+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="AliAhmed_JAVA_GUI_Lab1.jar" size="2693" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="aliahmed_java_gui_lab1.AliAhmed_JAVA_GUI_Lab1" name="AliAhmed_JAVA_GUI_Lab1"/>
+</jnlp>
+

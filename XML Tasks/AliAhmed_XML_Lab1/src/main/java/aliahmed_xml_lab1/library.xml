@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+<!DOCTYPE library SYSTEM "libraryDTD.dtd">
+
+<library>
+    <info>
+        <location></location>
+        <description></description>
+        <librarian></librarian>
+    </info>
+    <books>
+        <Btitle bid="a"></Btitle>
+        <ISBN id="a"></ISBN>
+        <Author gender="Male"></Author>
+        <preface></preface>
+        <parts pid="a">
+            <ptitle>part 1</ptitle>
+            <chapter chid="a">
+                <CHtitle length="20"></CHtitle>
+                <summary totalwords="30"></summary>
+                <sections sid="a1">
+                    <content>
+                        <![CDATA[ 
+Lorem ipsum dolor sit amet consectetur adipiscing elit proin nisi, natoque torquent diam class porta volutpat placerat.
+                        ]]>
+                    </content>
+                </sections>
+            </chapter>
+        </parts>
+    </books>
+</library>

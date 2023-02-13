@@ -1,0 +1,31 @@
+{
+    "library":{
+        "location":"Cairo, Egypt",
+        "description":"JavaScript: The Definitive Guide is another beginner-friendly book for anyone interested in building powerful web apps. It explores several JS and web platform API features aimed at web application development. Reading this book can help you gain an in-depth understanding of the workings of closure, graphics, prototyping, and more",
+        "librarian":"Ali Ahmed",
+        "books":[
+            {
+                "title":"JavaScript: The Definitive Guide",
+                "ISBN":"12345",
+                "Author":"David Flanagan",
+                "preface":"",
+                "parts":[
+                    {
+                        "title":"part 1",
+                        "chapters":[
+                            {
+                            "title":"JavaScript: The Definitive Guide",
+                            "summary":"how to write JavaScript code",
+                            "sections":[
+                                {
+                                    "content":"chapter content"
+                            }
+                        ]
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
+    }
+}

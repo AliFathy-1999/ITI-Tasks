@@ -1,0 +1,11 @@
+Write a suitable XPath Expression for following use cases:
+• Select all the CD's titles with price more than 10$
+    //cd[price>10]/title
+• Select all the CDs that came before 1990
+    //cd[year<1990]
+• Select the titles and prices of all the CDs from "UK"
+    //cd[country="UK"]/title | //cd[country="UK"]/price
+• Select the artists names in the CDs that came before "Dolly Parton" 's CD
+    //cd[year < //cd[artist="Dolly Parton"]/year]/artist
+• Select the titles of all the CDs after the "Private Dancer" CD
+    //cd[title="Private Dancer"]/following-sibling::cd/title

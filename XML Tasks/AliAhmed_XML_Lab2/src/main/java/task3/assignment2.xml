@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<BookStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="assig2Schema.xsd">
+    <Book>
+        <Title>JavaScript and JQuery: Interactive Front-End Web Development</Title>
+        <Author>Jon Duckett</Author>
+        <Date>31-3-2012</Date>
+        <ISBN>123</ISBN>
+        <Publisher>Wiley</Publisher>
+    </Book>
+</BookStore>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="assig1Schema.xsd">
+        <librarian>ali</librarian>  
+        <description>desc</description>  
+        <location>location</location>
+        <books>
+            <Btitle bid="1">ITI</Btitle>
+            <ISBN>22</ISBN>
+            <Author gender="Male">Ali ahmed</Author>
+            <preface>Welcome to ITI</preface>
+            <parts pid="1">
+                <ptitle>part 1</ptitle>
+                <chapter>
+                    <CHtitle> Chapter one</CHtitle>
+                    <summary> Summary</summary>
+                    <sections sid="1">
+                        <content>content content</content>
+                    </sections>
+                </chapter>
+            </parts>
+        </books>
+</library>

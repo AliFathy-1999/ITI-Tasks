@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="library">
+        <xs:complexType> 
+            <xs:sequence>
+                <xs:element name="librarian" type="xs:string" />
+                <xs:element name="description" type="xs:string" />
+                <xs:element name="location" type="xs:string" />
+                <xs:element name="books" type="booksType" />
+            </xs:sequence>    
+        </xs:complexType>
+    </xs:element> 
+        <xs:complexType name="booksType"> 
+            <xs:sequence> 
+                <xs:element name="Btitle">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="bid" type="xs:positiveInteger" />
+                            </xs:extension>
+                        </xs:simpleContent> 
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ISBN" type="xs:positiveInteger"/>
+                <xs:element name="Author">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="gender" type="genderType" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="preface" type="xs:string"/>
+                <xs:element name="parts" type="partsType"/>
+            </xs:sequence>     
+            <xs:attribute name="bid" type="xs:positiveInteger"/>   
+        </xs:complexType>     
+        <xs:complexType name="partsType"> 
+            <xs:sequence> 
+                <xs:element name="ptitle" type="xs:string"/>
+                <xs:element name="chapter" type="chaptersType"/>
+            </xs:sequence>  
+            <xs:attribute name="pid" type="xs:positiveInteger"/>   
+        </xs:complexType> 
+           <xs:complexType name="chaptersType"> 
+                <xs:sequence> 
+                    <xs:element name="CHtitle" type="xs:string"/>
+                    <xs:element name="summary" type="xs:string"/>
+                    <xs:element name="sections" type="sectionsType"/>  
+                </xs:sequence>     
+                
+        </xs:complexType>
+            <xs:complexType name="sectionsType"> 
+                <xs:sequence> 
+                    <xs:element name="content" type="xs:string"/>
+                </xs:sequence>  
+                <xs:attribute name="sid" type="xs:positiveInteger"/>   
+        </xs:complexType> 
+        <xs:simpleType name="genderType">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Male"/>
+                <xs:enumeration value="Female"/>
+            </xs:restriction>
+    </xs:simpleType> 
+</xs:schema>

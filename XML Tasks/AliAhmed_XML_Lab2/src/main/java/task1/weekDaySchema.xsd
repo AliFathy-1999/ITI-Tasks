@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:simpleType name="weekType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Sunday"/>
+            <xs:enumeration value="Monday"/>
+            <xs:enumeration value="Tuesday"/>
+            <xs:enumeration value="Wednesday"/>
+            <xs:enumeration value="Thursday"/>
+            <xs:enumeration value="Friday"/>
+            <xs:enumeration value="Saturday"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="dayNumber">
+	<xs:restriction base="xs:positiveInteger">
+		<xs:minInclusive value="1"/>
+		<xs:maxInclusive value="7"/>
+	</xs:restriction>
+    </xs:simpleType>
+    
+    <xs:element name="WeekDay">
+            <xs:simpleType>
+                    <xs:union memberTypes="weekType dayNumber"/>
+            </xs:simpleType>
+    </xs:element>
+</xs:schema>
