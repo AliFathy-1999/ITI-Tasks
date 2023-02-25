@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AliAhmed_JDBC_Lab2.jnlp">
+    <information>
+        <title>AliAhmed_JDBC_Lab2</title>
+        <vendor>alifathy99</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9.0.4+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="AliAhmed_JDBC_Lab2.jar" size="16736" download="eager"/>
+        <jar href="lib/mysql-connector-java-8.0.17.jar" size="2321813" download="eager"/>
+        <jar href="lib/protobuf-java-3.6.1.jar" size="1421323" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="aliahmed_jdbc_lab2.ContactGUI" name="ContactGUI"/>
+</jnlp>
+
