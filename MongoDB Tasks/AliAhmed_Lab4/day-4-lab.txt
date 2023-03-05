@@ -1,0 +1,7 @@
+- Running aggregation queries that use multiple stages ($match, $group, $count, $skip, $limit, $lookup, $sortByCount etc).
+- Using $project and $addFields with operator expressions such as ($getField, $first, $concat, $dateToString, $arrayElemAt etc).
+- Using $unwind.
+
+References:
+https://www.mongodb.com/docs/manual/reference/operator/aggregation/#expression-operators 
+https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/ 

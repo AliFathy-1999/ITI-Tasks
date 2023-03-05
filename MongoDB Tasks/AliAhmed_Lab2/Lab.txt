@@ -1,0 +1,10 @@
+Import the attached data into a new database (e.g. boxOffice) and collection (e.g. movieStarts)
+Find all movies that have a rating higher than 9.2 and a runtime lower than 100 minutes
+Find all movies that have a genre of "drama" or "action"
+Find all movies where visitors exceeded expected Visitors
+Find all movies with exactly two genres
+Find all movies which aired in 2018
+Find all movies which have ratings greater than 8 but lower than 10
+Create a new collection ("sports") and upset two new documents into it (with these fields: "title", "requiresTeam")
+Update all documents which do require a team by adding a new field with the minimum amount of players required
+Update all documents that require a team by increasing the number of required players by 10
