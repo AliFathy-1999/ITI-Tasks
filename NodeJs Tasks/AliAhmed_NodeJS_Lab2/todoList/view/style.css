@@ -1,0 +1,23 @@
+.div-task{
+    margin-top: 2em;
+    border-radius: 1em;
+    padding: 1%;
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    color: blue;
+}
+.div-task:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    position: relative;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }

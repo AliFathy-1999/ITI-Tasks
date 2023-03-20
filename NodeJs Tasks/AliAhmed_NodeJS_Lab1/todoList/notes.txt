@@ -1,0 +1,5 @@
+1- Create new file if not exist ====> DONE
+
+2- Modules (index.js + helper.js) =====> DONE
+
+3- add empty string ======> Done
