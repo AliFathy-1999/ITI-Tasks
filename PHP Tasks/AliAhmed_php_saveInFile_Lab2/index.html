@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>Php lab 2</title>
+</head>
+<body>
+  <form class="container border p-4 mt-5 mb-5" method="post" action="registration.php">
+
+    <h1 class="text-center">Registration Form</h1>
+  <div class="mb-3 m-auto">
+      <label for="firstName" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="first-name" name="firstName">
+  </div>
+  <div class="mb-3 m-auto">
+      <label for="last-name" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="last-name" name="lastName">
+  </div>
+  <div class="mb-3 m-auto">
+      <label for="address" class="form-label">Address</label>
+      <textarea class="form-control" id="address" rows="3" name="address"></textarea>
+  </div>
+  <label for="country" class="form-label">Country</label>
+    <select class="form-select mb-3" id="country" name="country" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="Egypt">Egypt</option>
+      <option value="England">England</option>
+      <option value="Algeria">Algeria</option>
+    </select>
+    <div class="mb-3">
+        <label for="gender" class="form-label me-3">Gender</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="gender" value="Male">
+          <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="gender" value="Female">
+          <label class="form-check-label" for="inlineRadio2">Female</label>
+        </div>
+    </div>
+    <div class="mb-3 m-auto">
+      <label for="Username" class="form-label">Username</label>
+      <input type="text" class="form-control" id="Username" name="username">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <div class="mb-3 m-auto">
+      <label for="Department" class="form-label">Department</label>
+      <input type="text" class="form-control" id="Department" name="department">
+    </div>
+    <div>
+      <p class="text-center fs-4">Sh68So</p>
+      <div class="d-flex">
+        <input type="text" class="form-control" id="code" name="code">
+        <p class="ms-3">Please Insert the code the below box</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-3 mb-5">
+        <input type="submit" value="Submit" class="btn btn-primary w-25">
+    </div>
+  </form>
+</body>
+</html>
