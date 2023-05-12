@@ -31,23 +31,31 @@ var detailedUsers = [
     },
 
   ];
-
+  // console.log(newyear.getFullYear());
+  //console.log(detailedUsers[0].dateOfBirth);
+  //var userBirthdate = new Date(detailedUsers[0].dateOfBirth);
 function calAge(date){
-    var newyear = new Date();
+    var newyear = new Date(); 
     var userBirthdate = new Date(date);
     var year= (newyear.getFullYear()-userBirthdate.getFullYear())-1;
     return year;
 }
 
+/*[1,2,3].forEach((currentValue)=>{
+  console.log(currentValue);
+})
+detailedUsers.map((currentValue)=>{
+  console.log(currentValue);
+});*/
 const formattedUsers=detailedUsers.map(formateFunction);
-
 function formateFunction(currentValue){
     var usersObj={};
     var addressArr=currentValue.address.split(',');
-    usersObj.fullName=currentValue.firstName + " " +currentValue.lastName;
+    //console.log(addressArr)
+    usersObj.fullName=currentValue.firstName + " " +currentValue.lastName; //concate
     usersObj.age=Number.parseInt(calAge(currentValue.dateOfBirth));
     if(addressArr.length===2){
-      usersObj.city=addressArr[0];
+      usersObj.city=addressArr[0]; //city : Alexandria
       usersObj.country=addressArr[1];
     }
     else if (addressArr.length === 3)
@@ -65,7 +73,7 @@ function formateFunction(currentValue){
     }
     else if (addressArr.length === 5)
     {
-      if (!isNaN(Number(addressArr[0])))
+      if (!isNaN(Number(addressArr[0]))) // abc
       {
         usersObj.buildingNumber = addressArr[0];
       }

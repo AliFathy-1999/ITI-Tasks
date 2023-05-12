@@ -24,6 +24,7 @@ console.log([1, 2, 3].sum());
   2. When trying to convert an object to string, the output is always '[object object]'.
   a. Change the default output for all objects to be 'This is an object'.
 */
+String()
 const obj = { message: 'My message' };
 function String(obj)
 {

@@ -76,20 +76,31 @@ var detailedUsers = [
       usersObj.country = addressArr[4];
   
     }
+    console.log(usersObj);
   return usersObj;
  }
+ /*[1,2,3,4,5]
+ sum=acc+currentValue
+ sum=1+2=3;
+ sum=3+3=6;
+ */
+ //accumaltion ==> arr[0]=1, arr[1]
+ //currentvalue ==>arr[1]=2,
  var count=0;
  var totalAge=0;
  function reducerFunc(accumulator, currentValue) {
-    if(currentValue.age < 40){
-      count++;
-      totalAge+=currentValue.age;
-      return (totalAge/count).toFixed(3);
+  // console.log("accumulator : " + accumulator.age);
+  // console.log("currentValue : " + currentValue.age);
+    if(currentValue.age < 40){ //27<40
+      count++;//count=1;
+      totalAge+=currentValue.age; //
+      return (totalAge/count).toFixed(3); //22.333
     }
  }
   
  var average = formattedUsers.reduce(reducerFunc,0);
- //console.log("Average = " + average);
+ //reduce(callbackFn, initialValue)
+ console.log("Average = " + average);
  /*
   2. Calculate the number of occurrences of all characters including numbers and white
      spaces in a string. The string may contain: numbers, upper and lower-case letters and
@@ -98,11 +109,10 @@ var detailedUsers = [
      of the a character.
  */
  var input = "abbflmffchocC19 ieqvh";
+
  function countOccurrence(str)
  {
-  str = str.split("").sort().join("").toLowerCase();
-  //console.log(str)
-  //str = str.toLowerCase();
+  str = str.split("").sort().join("").toLowerCase(); // 19cabbccefffhhilmoqv 
   if( str.length == 0 )
   {
     console.log("Invalid input")
@@ -129,9 +139,10 @@ var detailedUsers = [
           continue;
         }else if(count === 2){
           console.log(`Whitespace occurs twice`);
-         
+          continue;
         }else{
           console.log(`Whitespace occurs ${count} times`);
+          continue;
         }
       }
       if(count === 1){
